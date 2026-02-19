@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern E-commerce Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">🛍️</span>
+        <div>
+          <h1>NovaCommerce</h1>
+          <p>Admin Dashboard</p>
+        </div>
+      </div>
+
+      <nav>
+        <button class="nav-item active">Overview</button>
+        <button class="nav-item">Orders</button>
+        <button class="nav-item">Products</button>
+        <button class="nav-item">Customers</button>
+        <button class="nav-item">Marketing</button>
+        <button class="nav-item">Settings</button>
+      </nav>
+
+      <div class="sidebar-panel">
+        <p>Today Target</p>
+        <h2>$65,000</h2>
+        <small>+14% from yesterday</small>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar card">
+        <div>
+          <p class="eyebrow">Welcome back</p>
+          <h2>Store Performance Snapshot</h2>
+        </div>
+        <div class="topbar-actions">
+          <input type="search" placeholder="Search products or orders" />
+          <button>Export Report</button>
+        </div>
+      </header>
+
+      <section class="metrics-grid">
+        <article class="metric card">
+          <p>Total Revenue</p>
+          <h3>$128,430</h3>
+          <span class="positive">+12.8%</span>
+        </article>
+        <article class="metric card">
+          <p>Orders</p>
+          <h3>2,384</h3>
+          <span class="positive">+8.4%</span>
+        </article>
+        <article class="metric card">
+          <p>Conversion Rate</p>
+          <h3>4.76%</h3>
+          <span class="positive">+1.6%</span>
+        </article>
+        <article class="metric card">
+          <p>Refunds</p>
+          <h3>$4,241</h3>
+          <span class="negative">-2.1%</span>
+        </article>
+      </section>
+
+      <section class="analytics-grid">
+        <article class="card sales-chart">
+          <div class="section-head">
+            <h3>Sales Trend</h3>
+            <p>Last 7 days</p>
+          </div>
+          <div class="bars" aria-label="Sales trend chart">
+            <div style="--h: 62%"><span>Mon</span></div>
+            <div style="--h: 70%"><span>Tue</span></div>
+            <div style="--h: 56%"><span>Wed</span></div>
+            <div style="--h: 88%"><span>Thu</span></div>
+            <div style="--h: 94%"><span>Fri</span></div>
+            <div style="--h: 76%"><span>Sat</span></div>
+            <div style="--h: 68%"><span>Sun</span></div>
+          </div>
+        </article>
+
+        <article class="card summary-list">
+          <div class="section-head">
+            <h3>Top Categories</h3>
+            <p>Revenue share</p>
+          </div>
+          <ul>
+            <li><span>Fashion</span><strong>34%</strong></li>
+            <li><span>Accessories</span><strong>25%</strong></li>
+            <li><span>Beauty</span><strong>18%</strong></li>
+            <li><span>Home Living</span><strong>14%</strong></li>
+            <li><span>Electronics</span><strong>9%</strong></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="card table-card">
+        <div class="section-head">
+          <h3>Recent Orders</h3>
+          <p>Updated just now</p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Order</th>
+              <th>Customer</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#INV-00291</td>
+              <td>Emma Park</td>
+              <td>Feb 16, 2026</td>
+              <td><span class="badge shipped">Shipped</span></td>
+              <td>$168.00</td>
+            </tr>
+            <tr>
+              <td>#INV-00290</td>
+              <td>Noah Kim</td>
+              <td>Feb 16, 2026</td>
+              <td><span class="badge pending">Pending</span></td>
+              <td>$89.00</td>
+            </tr>
+            <tr>
+              <td>#INV-00289</td>
+              <td>Sophia Brown</td>
+              <td>Feb 15, 2026</td>
+              <td><span class="badge delivered">Delivered</span></td>
+              <td>$242.00</td>
+            </tr>
+            <tr>
+              <td>#INV-00288</td>
+              <td>Lucas Patel</td>
+              <td>Feb 15, 2026</td>
+              <td><span class="badge canceled">Canceled</span></td>
+              <td>$53.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
